@@ -27,6 +27,5 @@ public class EmployeeController {
     public void saveEmployee(@PathVariable("id") Long id, @PathVariable("name") String name) {
         Employee employee = new Employee(id, name);
         employeeService.save(employee);
-
     }
 }
